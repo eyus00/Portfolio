@@ -60,9 +60,9 @@
 }
 
 .light-mode img {
-    content: url('https://raw.githubusercontent.com/eyus00/portfolio-test/main/media/logo-black.png');
+    content: url('https://raw.githubusercontent.com/eyus00/portfolio/main/media/logo-black.png');
 }
 
 .dark-mode .light-mode img {
-    content: url('https://raw.githubusercontent.com/eyus00/portfolio-test/main/media/logo-white.png');
+    content: url('https://raw.githubusercontent.com/eyus00/portfolio/main/media/logo-white.png');
 }
