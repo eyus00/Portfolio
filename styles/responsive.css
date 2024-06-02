@@ -1,0 +1,74 @@
+/* Adjustments for screens up to 1440px */
+@media only screen and (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 50px; /* Reduce padding */
+    }
+    h1 {
+        font-size: 4em; /* Decrease font size */
+    }
+    .social-container {
+        margin-top: 20px; /* Adjust spacing */
+    }
+    .social {
+        font-size: 2em; /* Adjust font size */
+    }
+}
+
+/* Adjustments for screens up to 768px */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 728px;
+        padding: 0 20px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .contact-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .social-container {
+        margin-top: 20px; /* Adjust spacing */
+    }
+    .social {
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+/* Adjustments for screens up to 360px */
+@media only screen and (max-width: 360px) {
+    .container {
+        max-width: 320px;
+        padding: 0 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 0.9rem;
+    }
+    .contact-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+    .social-container {
+        margin-top: 20px; /* Adjust spacing */
+    }
+    .social {
+        font-size: 0.9em; /* Adjust font size */
+    }
+}
+/* Adjustments for screens up to 768px */
+@media only screen and (max-width: 768px) {
+    .social {
+        font-size: 1em; /* Adjust font size */
+        justify-content: flex-start; /* Align buttons to the start */
+    }
+    .social li {
+        margin: 0 5px; /* Reduce spacing between buttons */
+    }
+}

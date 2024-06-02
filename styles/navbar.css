@@ -1,0 +1,68 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 40px 0 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .header {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo-container img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.mode-switcher button {
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.mode-switcher button:hover {
+    color: #555;
+}
+
+.dark-mode .mode-switcher button {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .mode-switcher button:hover {
+    color: #bbb;
+}
+
+.light-mode img {
+    content: url('https://raw.githubusercontent.com/eyus00/portfolio-test/main/media/logo-black.png');
+}
+
+.dark-mode .light-mode img {
+    content: url('https://raw.githubusercontent.com/eyus00/portfolio-test/main/media/logo-white.png');
+}

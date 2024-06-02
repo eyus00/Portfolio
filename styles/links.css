@@ -1,0 +1,126 @@
+.social-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.social li {
+    margin: 0;
+}
+
+.social li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.social li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #000;
+    font-size: 26px; /* Increased icon size */
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), inset 0 4px 6px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transform: translateY(0);
+    text-decoration: none;
+}
+
+.social li a::before,
+.social li a::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+}
+
+.social li a::before {
+    width: 100%;
+    height: 10px;
+    top: -10px;
+    left: 0;
+}
+
+.social li a::after {
+    width: 10px;
+    height: 100%;
+    top: 0;
+    right: -10px;
+}
+
+.social li a:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2), inset 0 4px 6px rgba(255, 255, 255, 0.3);
+}
+
+.social li a:hover::before,
+.social li a:hover::after {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.social li a .fa-brands {
+    line-height: 1;
+}
+
+/* Dark mode styles */
+.dark-mode .social li a {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1), inset 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .social li a::before,
+.dark-mode .social li a::after {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .social li a:hover {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2), inset 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .social li a:hover::before,
+.dark-mode .social li a:hover::after {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Adjustments for screens up to 768px */
+@media only screen and (max-width: 768px) {
+    .social li a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .social li:not(:first-child) {
+        margin-left: 15px;
+    }
+}
+
+/* Adjustments for screens up to 360px */
+@media only screen and (max-width: 360px) {
+    .social li a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .social li:not(:first-child) {
+        margin-left: 10px;
+    }
+}
