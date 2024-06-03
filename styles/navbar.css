@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Add this line */
     padding: 5px 15px;
     margin: 40px 0 20px;
     background: rgba(255, 255, 255, 0.2);
@@ -11,6 +11,21 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mode-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode-toggle {
+    width: 15px; /* Reduced width */
+    height: 15px; /* Reduced height */
+    margin-top: -5px; /* Move the moon icon 10px down */
+}
+
+.dark-mode-toggle i {
+    font-size: 1.2em; /* Adjust the font size as needed */
 }
 
 .dark-mode .header {
@@ -40,6 +55,7 @@
     cursor: pointer;
     border: none;
     background: transparent;
+    margin-right: 10px;
     outline: none;
     padding: 0;
     color: #333;
